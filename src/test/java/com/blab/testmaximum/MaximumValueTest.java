@@ -49,5 +49,12 @@ class MaximumValueTest {
         assertEquals(400.0f,actualValue,"Testcase failed because excepted output is 400.0");
     }
 
+    @Test
+    public void checkMaxStringTestAtFirstPos()
+    {
+        String actualValue = MaximumValue.checkMaxString("Peach","Apple","Banana");
+        assertEquals("Peach",actualValue,"Testcase failed because excepted output is Peach");
+    }
+
 
 }
