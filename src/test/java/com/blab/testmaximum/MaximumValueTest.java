@@ -22,6 +22,14 @@ class MaximumValueTest {
 
     }
 
+    @Test
+    public void checkMaxIntTestAtThirdPos()
+    {
+        int actualValue = MaximumValue.checkMaxInt(25,250,400);
+        assertEquals(400,actualValue,"Testcase failed because excepted output is 400");
+
+    }
+
 
 
 }
