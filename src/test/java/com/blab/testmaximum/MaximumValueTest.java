@@ -28,5 +28,12 @@ class MaximumValueTest {
         assertEquals(400,actualValue,"Testcase failed because excepted output is 400");
     }
 
+    @Test
+    public void checkMaxFloatTestAtFirstPos()
+    {
+        Float actualValue = MaximumValue.checkMaxFloat(100.0f,25.0f,40.0f);
+        assertEquals(100.0f,actualValue,"Testcase failed because excepted output is 100.0");
+    }
+
 
 }
