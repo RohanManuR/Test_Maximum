@@ -1,8 +1,20 @@
 package com.blab.testmaximum;
 
-public class MaximumValue {
+public class MaximumValue<E extends Comparable>
+{
+    E a,b,c;
 
-    public static <E extends Comparable> E genericMethodForMaximum(E a,E b,E c)
+    public MaximumValue(E a, E b, E c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+
+    public  E testMaximum()
+    {
+        return findMaximum(a,b,c);
+    }
+    public static <E extends Comparable> E findMaximum(E a, E b, E c)
     {
         E max = a;
         if(max.compareTo(b)<0)

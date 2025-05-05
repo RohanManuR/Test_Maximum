@@ -9,7 +9,8 @@ class MaximumValueTest {
     @Test
     public void checkMaxIntTestAtFirstPos()
     {
-       int actualValue = MaximumValue.genericMethodForMaximum(100,25,40);
+        MaximumValue maximumValue = new MaximumValue(100,25,40);
+        Comparable actualValue = maximumValue.testMaximum();
        assertEquals(100,actualValue,"Testcase failed because excepted output is 100");
 
     }
@@ -17,56 +18,65 @@ class MaximumValueTest {
     @Test
     public void checkMaxIntTestAtSecondPos()
     {
-        int actualValue = MaximumValue.genericMethodForMaximum(25,250,40);
+        MaximumValue maximumValue = new MaximumValue(25,250,40);
+        Comparable actualValue = maximumValue.testMaximum();
         assertEquals(250,actualValue,"Testcase failed because excepted output is 250");
     }
 
     @Test
     public void checkMaxIntTestAtThirdPos()
     {
-        int actualValue = MaximumValue.genericMethodForMaximum(25,250,400);
+        MaximumValue maximumValue = new MaximumValue(25,250,400);
+
+        Comparable actualValue = maximumValue.testMaximum();
         assertEquals(400,actualValue,"Testcase failed because excepted output is 400");
     }
 
     @Test
     public void checkMaxFloatTestAtFirstPos()
     {
-        Float actualValue = MaximumValue.genericMethodForMaximum(100.0f,25.0f,40.0f);
+        MaximumValue maximumValue = new MaximumValue(100.0f,25.0f,40.0f);
+        Comparable actualValue = maximumValue.testMaximum();
         assertEquals(100.0f,actualValue,"Testcase failed because excepted output is 100.0");
     }
 
     @Test
     public void checkMaxFloatTestAtSecondPos()
     {
-        Float actualValue = MaximumValue.genericMethodForMaximum(100.0f,250.0f,40.0f);
+        MaximumValue maximumValue = new MaximumValue(100.0f,250.0f,40.0f);
+        Comparable actualValue = maximumValue.testMaximum();
         assertEquals(250.0f,actualValue,"Testcase failed because excepted output is 250.0");
     }
 
     @Test
     public void checkMaxFloatTestAtThirdPos()
     {
-        Float actualValue = MaximumValue.genericMethodForMaximum(100.0f,250.0f,400.0f);
+        MaximumValue maximumValue = new MaximumValue(100.0f,250.0f,400.0f);
+        Comparable actualValue = maximumValue.testMaximum();
         assertEquals(400.0f,actualValue,"Testcase failed because excepted output is 400.0");
     }
 
     @Test
     public void checkMaxStringTestAtFirstPos()
     {
-        String actualValue = MaximumValue.genericMethodForMaximum("Peach","Apple","Banana");
+        MaximumValue maximumValue = new MaximumValue("Peach","Apple","Banana");
+        Comparable actualValue = maximumValue.testMaximum();
         assertEquals("Peach",actualValue,"Testcase failed because excepted output is Peach");
     }
 
     @Test
     public void checkMaxStringTestAtSecondPos()
     {
-        String actualValue = MaximumValue.genericMethodForMaximum("Apple","Peach","Banana");
+        MaximumValue maximumValue = new MaximumValue("Apple","Peach","Banana");
+        Comparable actualValue = maximumValue.testMaximum();
         assertEquals("Peach",actualValue,"Testcase failed because excepted output is Peach");
     }
 
     @Test
     public void checkMaxStringTestAtThirdPos()
     {
-        String actualValue = MaximumValue.genericMethodForMaximum("Apple","Banana","Peach");
+        MaximumValue maximumValue = new MaximumValue("Apple","Banana","Peach");
+        Comparable actualValue = maximumValue.testMaximum();
         assertEquals("Peach",actualValue,"Testcase failed because excepted output is Peach");
     }
 }
