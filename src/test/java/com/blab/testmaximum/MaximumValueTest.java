@@ -2,6 +2,8 @@ package com.blab.testmaximum;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Optional;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MaximumValueTest {
@@ -9,7 +11,7 @@ class MaximumValueTest {
     @Test
     public void checkMaxIntTestAtFirstPos()
     {
-        MaximumValue maximumValue = new MaximumValue(100,25,40);
+        MaximumValue maximumValue = new MaximumValue(100,10,5);
         Comparable actualValue = maximumValue.testMaximum();
        assertEquals(100,actualValue,"Testcase failed because excepted output is 100");
 

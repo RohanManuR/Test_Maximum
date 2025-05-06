@@ -1,27 +1,28 @@
 package com.blab.testmaximum;
 
+import java.util.Optional;
+
 public class MaximumValue<E extends Comparable>
 {
-    E a,b,c;
+    E[] a;
 
-    public MaximumValue(E a, E b, E c) {
+    public MaximumValue(E... a) {
         this.a = a;
-        this.b = b;
-        this.c = c;
     }
 
     public  E testMaximum()
     {
-        return findMaximum(a,b,c);
+        return findMaximum(a);
     }
-    public static <E extends Comparable> E findMaximum(E a, E b, E c)
+    public static <E extends Comparable> E findMaximum(E... a)
     {
-        E max = a;
-        if(max.compareTo(b)<0)
-            max = b;
-        if(max.compareTo(c)<0)
-            max = c;
+        E max = a[0];
+        for (int i = 1; i < a.length; i++) {
+            if(a[i].compareTo(max)>0)
+                max = a[i];
+        }
         return max;
     }
+
 
 }
