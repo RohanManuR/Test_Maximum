@@ -14,6 +14,11 @@ public class MaximumValue<E extends Comparable>
     {
         return findMaximum(a);
     }
+
+    public void printMax(E max)
+    {
+        System.out.println("Maximum value is: " + max);
+    }
     public static <E extends Comparable> E findMaximum(E... a)
     {
         E max = a[0];
@@ -21,6 +26,7 @@ public class MaximumValue<E extends Comparable>
             if(a[i].compareTo(max)>0)
                 max = a[i];
         }
+
         return max;
     }
 

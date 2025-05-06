@@ -22,6 +22,7 @@ class MaximumValueTest {
     {
         MaximumValue maximumValue = new MaximumValue(25,250,40);
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         assertEquals(250,actualValue,"Testcase failed because excepted output is 250");
     }
 
@@ -29,8 +30,8 @@ class MaximumValueTest {
     public void checkMaxIntTestAtThirdPos()
     {
         MaximumValue maximumValue = new MaximumValue(25,250,400);
-
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         assertEquals(400,actualValue,"Testcase failed because excepted output is 400");
     }
 
@@ -39,6 +40,7 @@ class MaximumValueTest {
     {
         MaximumValue maximumValue = new MaximumValue(100.0f,25.0f,40.0f);
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         assertEquals(100.0f,actualValue,"Testcase failed because excepted output is 100.0");
     }
 
@@ -47,6 +49,7 @@ class MaximumValueTest {
     {
         MaximumValue maximumValue = new MaximumValue(100.0f,250.0f,40.0f);
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         assertEquals(250.0f,actualValue,"Testcase failed because excepted output is 250.0");
     }
 
@@ -55,6 +58,7 @@ class MaximumValueTest {
     {
         MaximumValue maximumValue = new MaximumValue(100.0f,250.0f,400.0f);
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         assertEquals(400.0f,actualValue,"Testcase failed because excepted output is 400.0");
     }
 
@@ -63,6 +67,7 @@ class MaximumValueTest {
     {
         MaximumValue maximumValue = new MaximumValue("Peach","Apple","Banana");
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         assertEquals("Peach",actualValue,"Testcase failed because excepted output is Peach");
     }
 
@@ -71,6 +76,7 @@ class MaximumValueTest {
     {
         MaximumValue maximumValue = new MaximumValue("Apple","Peach","Banana");
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         assertEquals("Peach",actualValue,"Testcase failed because excepted output is Peach");
     }
 
@@ -79,6 +85,7 @@ class MaximumValueTest {
     {
         MaximumValue maximumValue = new MaximumValue("Apple","Banana","Peach");
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
         assertEquals("Peach",actualValue,"Testcase failed because excepted output is Peach");
     }
 }
