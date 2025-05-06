@@ -13,6 +13,7 @@ class MaximumValueTest {
     {
         MaximumValue maximumValue = new MaximumValue(100,10,5);
         Comparable actualValue = maximumValue.testMaximum();
+        maximumValue.printMax(actualValue);
        assertEquals(100,actualValue,"Testcase failed because excepted output is 100");
 
     }
